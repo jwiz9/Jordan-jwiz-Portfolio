@@ -2,13 +2,15 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Times New Roman', Times, serif
 }
 
 header {
   display: block;
-  background-color: #fc0505;
-  height: 75px;
-  border-bottom: 10px solid #63f17b;
+  background-color: #d72631;
+  font-weight: 600;
+  height: 100px;
+  border-bottom: 10px solid #a2d5c6;
 }
 
 header h1 {
@@ -17,13 +19,13 @@ header h1 {
 }
 
 header span {
-  color: #08ff77;
+  color: #077b8a;
 }
 
 h1::after {
   font-family: Impact;
   content: 'wiz';
-  color: #8ac4ff;
+  color: #5c3c92;
   margin-left: 0px;
 }
 
@@ -32,7 +34,6 @@ header nav {
   margin-right: 20px;
   float: right;
   font-size: 20px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 header nav ul {
@@ -47,7 +48,7 @@ header nav ul li {
 main {
   display: flex;
   flex: 1 1 0;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 2% auto;
 }
 
@@ -63,10 +64,9 @@ article p {
 }
 
 main h2 {
-  font-family: 'Georgia', Times, 'Times New Roman', serif;
   font-size: 20px;
   font-weight: bold;
-  color:#4aaaa5;
+  color:#a2d5c6;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
@@ -75,24 +75,36 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 1.3;
+  background-color: #077b8a;
+}
+
+.avatar {
+  height: 400px;
+  width: 33%;
+  background-image: url("../images/jordan-avatar.png");
+  background-size: contain;
+  background-position: center;
 }
 
 a {
-  color: #bb2e2e;
+  color: #a2d5c6;
   text-decoration: none;
 }
 
 p {
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 2;
-  color: #777777;
+  color: #a2d5c6;
+  margin-bottom: 20px;
+  padding:50px;
+  height: 300px;
+  text-align: left;
+  background-color: #d72631;
 }
 
 .link {
   font-size: 15px;
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  color: #777777;
+  color: #a2d5c6;
   margin: 15px;
   padding: 15px 30px 15px 30px;
   float: right;
@@ -102,23 +114,22 @@ p {
 }
 
 .link:hover {
-  background-color: rgb(214, 214, 214);
-  color: white;
+  background-color: #077b8a;
+  color: #5c3c92;
 }
 
 footer {
   display: flex;
   justify-content: center;
   padding: 2%;
-  background-color: #13293d;
-  color: #fff;
-  border-top: 10px solid #fc0505;
+  background-color: #5c3c92;
+  color: #a2d5c6;
+  border-top: 10px solid #d72631;
   margin-top: 20px;
 }
 
 footer p {
   text-align: center;
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 10px;
   padding: 10px;
 }
