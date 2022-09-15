@@ -7,8 +7,6 @@ The purpose of this project is to provide a snapshot for future employers to see
 
 ## Usage
 
-Use this README to explore my motives, design ideas, and coding ability using the following screenshot:
+Use this README to explore my motives, design ideas, and coding ability.
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![screenshot](https://user-images.githubusercontent.com/112971337/190304793-a5315ad5-3ca9-4035-9a98-41d3ffcd4375.png)
