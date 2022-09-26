@@ -1,50 +1,140 @@
 <!DOCTYPE html>
-<html lang="en-us">
+
+<html lang="en">
 
 <head>
-  <!-- Additional reset css included to make my style css baseline no matter what browser. -->
-  <title>Jordan | jwiz Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<header>
-  <!-- Pseudo element added to title. -->
-  <h1><a href="#">Jordan<span> | </span>j</a></h1>
-  <nav>
-      <ul>
-          <li><a class="link" href="index.html">About Me</a></li> 
-          <li><a class="link" href="portfolio.html">Portfolio</a></li> 
-          <li><a class="link" href="contact.html">Contact</a></li>
-      </ul>          
-  </nav>
-      
-</header>
 
 <body>
-
-  <main>
-    <section>
-      <figure>
-        <h2 class="text-center">About Me</h2>
-          <section class="avatar"></section>
-      </figure>
-    <section>
-          <p>
-            I am a aspiring web developer looking to showcase my skills and talent on projects I find 
-            interesting. I'm currently enrolled in the SCS Coding Boot Camp offered by the University 
-            of Toronto. This program will conclude November 29, 2022; then, I will be trained in a 
-            plethora of programming languages and be ready to take on many different kinds of projects.
-            Previously, I graduated from University of Toronto with a Honours Bachelor of Arts, where I 
-            was given the opporunity to explore social issues and write or present certain topics using
-            critical analysis. While my program had nothing to do with coding, I have always been attatched 
-            to my computer. My nickname, jwiz, represents my online identity I use across multiple platforms 
-            available on the computer.
+    <!-- Header begins here -->
+    <header class="flex-container">
+        <nav class="flex-container">
+            <h1>
+                <a>Jordan<span> | </span>j</a>
+            </h1>
+            <ul class="flex-container">
+                <li><a href="#about-me">ABOUT ME</a></li>
+                <li><a href="#work">MY WORK</a></li>
+                <li><a href="#resume">MY RESUME</a></li>
+                <li><a href="#contact-me">CONTACT ME</a></li>
+            </ul>
+        </nav>
+        <!-- jumbotron image-->
+        <section id="hero" class="flex-container">
+            <div>
+                <img src="assets/images/jordan-avatar.png" alt="Avatar of Jordan" />
+            </div>
+            <h2>My Portfolio</h2>
+        </section>
+    </header>
+    <!-- Header ends here-->
+    <!-- About me section begins here-->
+    <section id="about-me" class="flex-container">
+        <h2>
+            ABOUT ME
+        </h2>
+        <div class="border">
+            <p>
+                My name is Jordan, I am a aspiring web developer looking to showcase my skills and talent on projects I find interesting. I graduated from the University of Toronto with a Honours
+                Bachelor of Arts, where I was given the opporunity to develop my ability to critically analyze data and then critically reason in essays and presentations. 
+            </p>
+            <br />
+            <p>
+                I also go by the online persona of jwiz which is the online ID I use in various domains on the internet.
           </p>
+        </div>
     </section>
-  </main>
-
-  <footer>
-    <h3>Copyright © Jordan | jwiz</h3>
-  </footer>
+     <!-- About me section ends here-->
+      <!-- Work section begins here containing deployed projects. Project 1 a placeholder for now -->
+    <section id="work" class="flex-container">
+        <h2>
+            MY WORK
+        </h2>
+        <div class="border flex-container" id="projects">
+            <div>
+                <a href="https://github.com/jwiz9" target="_blank">
+                    <img src="assets/images/placeimg-1.jpg" alt="Project 1">
+                </a>
+            </div>
+            <div>
+                <a href="https://jwiz9.github.io/general-dolphin/" target="_blank">
+                    <img src="assets/images/placeimg-2.jpg" alt="Coding Quiz">
+                </a>
+            </div>
+            <div>
+                <a href="https://jwiz9.github.io/friendly-disco/" target="_blank">
+                    <img src="assets/images/placeimg-3.jpg" alt="Work Day Scheduler">
+                </a>
+            </div>
+            <div>
+                <a href="https://jwiz9.github.io/unbiased-machine/" target="_blank">
+                    <img src="assets/images/placeimg-4.jpg" alt="Password Generator">
+                </a>
+            </div>
+            <div>
+                <a href="https://jwiz9.github.io/verbose-dollop/" target="_blank">
+                    <img src="assets/images/placeimg-5.jpg" alt="Refactoring Project">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Work section ends here-->
+    <!-- Resume section begins here-->
+    <section id="resume" class="flex-container">
+        <h2>
+            MY RESUME
+        </h2>
+        <div class="border flex-container" id="info">
+            <div class="flex-container">
+                <h3>Education</h3>
+                <div>
+                    <p>
+                        Honours Bachelor of Arts <br />
+                        Microcredential in Cloud Computing <br />
+                        University of Toronto SCS Coding Bootcamp
+                    </p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <h3>Mission</h3>
+                <div>
+                    <p>
+                        My mission as a web developer is to demonstrate my ability through the creation of various content using as many programming languages that I am proficient in as possible
+                        I will always look for the most efficent routes to improve my work and work tirelessly to make sure its sound and up to expectations of myself and any user interpreting it.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <h3>Technologies & Concepts</h3>
+                <div>
+                    <p> 
+                        HTML CSS JAVASCRIPT GIT APIS JQUERY JSON 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Resume section ends here-->
+    <!-- Contact me section begins here containing information to reach me-->
+    <footer id="contact-me" class="flex-container">
+        <h2>
+            CONTACT ME
+        </h2>
+        <address class="flex-container border">
+            <a href="tel:+16479199780" target="_blank"><img class="logo" src="assets/images/phoneicon.png" alt="Phone Icon"></a>
+            <a href="https://github.com/jwiz9" target="_blank"><img class="logo" src="assets/images/githubicon.png" alt="Github Icon"></a>
+            <a href="mailto:jordanheath945@gmail.com"target="_blank"><img class="logo" src="assets/images/gmailicon.png" alt="Gmail Icon"></a>
+            <a href="https://www.linkedin.com/in/jordan-heath-aa757819b/" target="_blank"><img class="logo" src="assets/images/linkedinicon.png" alt="LinkedIn Icon"></a>
+        </address>
+    </footer>
+    <!-- Contact me section ends here-->
 </body>
 </html>

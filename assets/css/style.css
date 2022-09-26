@@ -1,156 +1,509 @@
-/* Roots to be used acroos all css files */
 :root {
-  --red: #d72631;
-  --Cyan: #a2d5c6;
-  --Blue: #077b8a;
-  --Purple: #5c3c92;
+  --primary-color: white;
+  --secondary-color: linear-gradient(180deg,black, rgb(6, 0, 37));
+  --color-black: black;
+  --link-hover: rgb(221, 83, 3);
+  --heading-responsive: #7ce4e8;
 }
-/* Universal Modifier for all text in web page */
+
 * {
-  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary-color);
+  font-family: 'Press Start 2P', cursive;
 }
 
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(6, 0, 37);
+}
+
+/* Header section begins here */
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--red);
-  font-weight: 600;
-  padding: 1%;
-  height: 100px;
-  border-bottom: 10px solid var(--Cyan);
-}
-
-header h1 {
-  display: flex;
-  font-size: 48px;
-}
-
-header span {
-  color: var(--Blue);
-}
-
-body {
-  display: flex;
   flex-direction: column;
-  line-height: 1.3;
-}
-
-h1::after {
-  font-family: Impact;
-  content: 'wiz';
-  color: var(--Purple);
-  margin-left: 0px;
+  flex-wrap: wrap;
 }
 
 header nav {
-  padding-top: 15px;
-  margin-right: 20px;
-  float: right;
-  font-size: 20px;
+  justify-content: space-between;
+  padding: 5px 5px;
+  background:  var(--secondary-color);
+  z-index: 9999;
+
+}
+
+header nav h1 {
+  font-size: 3rem;
+}
+
+h1::after {
+  content: 'wiz';
+  color: var(--link-hover);
+  margin-left: -40px;
 }
 
 header nav ul {
-  list-style-type: none;
+  flex: 0 30%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 12px;
 }
 
-header nav ul li {
-  display: inline-block;
-  margin-left: 25px;
-}
-
-main {
-  display: flex;
-  flex: 1 1 0;
-  max-width: 1400px;
-  margin: 2% auto;
-}
-
-main section {
-  flex: 1 1 0;
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
-.text-center {
-  text-align: center;
-}
-
-main h2 {
-  font-size: 50px;
+header nav ul li a {
+  text-decoration: none;
   font-weight: bold;
-  color:var(--Cyan);
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding: 5px 10px 0px;
+  transition-duration: 0.2s;
+  border-radius: 25%;
 }
 
-body {
-  display: flex;
+header nav ul li a:active {
+  opacity: 0.4;
+  transition-duration: 0.1s;
+
+}
+
+header nav ul li a:hover {
+  border: 2px solid var(--link-hover);
+}
+
+section:not(#hero), footer {
+  padding: 0 20px 40px 20px;
+}
+
+section:not(#hero) h2:hover, footer h2:hover {
+  opacity: 0.6;
+}
+
+section h2, footer h2 {
+  font-size: 2rem;
+}
+
+/* Hero section begins here */
+#hero {
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background-image: url(../images/hero-picture.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+#hero h2 {
+  padding: 10px;
+  flex: 0 20%;
+}
+
+#hero div {
+  position: relative;
+  bottom: -40px;
+  left: 50px;
+  flex: 0 80%;
+  height: auto;
+  align-self: flex-end;
+  justify-self: flex-start;
+}
+
+#hero div img {
+  width: 12%;
+  height: auto;
+  border-radius: 45%;
+}
+
+/* Header and hero section ends here */
+
+/* about me section begins here */
+#about-me {
+ justify-content: center;
+ height: 100%;
+}
+
+#about-me h2 {
+  flex: 0 10%;
+  word-spacing: 10px;
+}
+
+#about-me div {
+  flex: 0 60%;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+#about-me div p{
+  width: 90%;
+}
+/* about me section ends here */
+
+/* work section begins here */
+#work {
+  justify-content: center;
+  height: 100%;
+}
+
+#work h2 {
+  flex: 0 10%;
+}
+
+#work #projects {
+  flex: 0 60%;
+  flex-wrap: wrap;
+}
+
+#work #projects > div {
+  width: 45%;
+  height: 260px;
+  margin: 10px 10px 5px 10px;
+  overflow: hidden;
+}
+
+#work #projects > div img {
+  width: 100%;
+  object-fit: contain;
+  opacity: 0.8;
+}
+
+#work #projects > div img:hover {
+  opacity: 1;
+  transition: 0.4s;
+  cursor: crosshair;
+}
+
+#work #projects > div:first-child {
+  width: 100%;
+  text-align: center;
+  margin: 10 0;
+  height: 350px;
+}
+
+#work #projects > div:first-child img {
+  width: 80%;
+}
+/* work section ends here */
+
+/* resume section begins here */
+#resume {
+  justify-content: center;
+  height: 100%;
+}
+
+#resume h2 {
+  flex: 0 10%;
+}
+
+#resume #info {
+  flex: 0 60%;
+  justify-content: space-evenly;
+}
+
+#resume #info div {
+  height: 100%;
+  flex: 0 30%;
   flex-direction: column;
-  line-height: 1.3;
-  background-color: var(--Blue);
+  text-align: center;
+
 }
 
-.avatar {
-  height: 400px;
-  width: 415px;
-  background-image: url("../images/jordan-avatar.png");
-  background-size: 400px;
-  flex: 1 1 0;
-  margin: auto;
+#resume #info div h3 {
+  font-size: 1.4rem;
+  border-top: 2px solid rgb(221, 83, 3);
+  padding: 5px;
 }
 
-a {
-  color: var(--Cyan);
+#resume #info div p {
+  padding-top: 10%;
+  line-height: 1.5;
+}
+
+#resume #info > div:nth-child(2) p {
+  border: 1px solid rgb(14, 99, 156);
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#resume #info > div:last-child p {
+  word-spacing: 50px;
+  line-height: 50px;
+  font-weight: 500;
+
+}
+/* resume section ends here */
+
+/* contact me section begins here */
+#contact-me {
+  justify-content: center;
+  height: 100%;
+}
+
+#contact-me h2 {
+  flex: 0 10%;
+}
+
+#contact-me address {
+  flex: 0 60%;
+  justify-content: center;
+}
+
+#contact-me address a {
   text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+  border-bottom: 4px solid rgb(221, 83, 3);
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
 }
 
-p {
-  font-size: 110%;
-  margin: 2% 0;
-  color: var(--Cyan);
-}
-/* Links to all necessary htmls */
-.link {
-  font-size: 15px;
-  color: var(--Cyan);
-  margin: 15px;
-  padding: 15px 30px 15px 30px;
-  float: right;
-  text-decoration: none;
+.logo {
+  float: left;
+  width: 80px; 
+  padding: 10px; 
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
-.link:hover {
-  background-color: var(--Blue);
-  color: var(--Purple);
+.logo:hover {
+  opacity: 0.3;
 }
 
-footer {
+/* contact me section ends here */
+
+/* class selectors begins here */
+.flex-container {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 2%;
-  background-color: var(--Purple);
-  color: var(--Cyan);
-  border-top: 10px solid var(--red);
-  margin-top: 20px;
 }
 
-footer p {
-  text-align: center;
-  font-size: 10px;
-  padding: 10px;
+.border {
+  border-left: 5px solid var(--color-black);
+}
+/* class selectors ends here */
+
+/* Media Queries section begins here for mobile-responsiveness */
+@media screen and (max-width: 1200px) {
+
+  header nav ul {
+      flex: 0 40%;
+      margin-right: 15px;
+  }
+
+  header nav ul li a {
+      font-size: 0.9rem;
+  }
+  
+  #hero div img {
+      width: 15%;
+  }
+
+  #about-me h2 {
+      flex: 0 15%;
+      align-self: center;
+      word-spacing: 0; 
+  }
+  
+  #about-me div {
+      flex: 0 80%;
+  }
+
+  #work h2 {
+      flex: 0 15%;
+      align-self: center;
+  }
+  
+  #work #projects {
+      flex: 0 80%;
+      flex-wrap: wrap;
+  }
+  
+  #work #projects > div {
+      width: 45%;
+      height: 190px;
+      margin: 10px 10px 0 10px;
+  }
+
+  #resume h2 {
+      flex: 0 15%;
+      align-self: center;
+  }
+  
+  #resume #info {
+      flex: 0 80%;
+      justify-content: space-evenly;
+  }
+  
+  #resume #info div {
+      height: 100%;
+      flex: 0 30%;
+      flex-direction: column;
+      text-align: center;
+  
+  }
+
+  #resume #info > div:nth-child(2) p {
+      font-size: 0.9rem;
+  }
+  
+  #resume #info > div:last-child p {
+      word-spacing: 45px;
+      line-height: 40px;
+  
+  }
+
+  #contact-me h2 {
+      flex: 0 15%;
+  }
+  
+  #contact-me address {
+      flex: 0 80%;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
-  main,
-  nav {
-    flex-direction: column;
+
+  header nav h1 {
+      font-size: 2rem;
   }
-  section {
-  padding-right: 0;
+
+  header nav ul {
+      flex: 0 45%;
+      margin-right: 15px;
   }
+  
+  header nav ul li a {
+      flex: 0 30%;
+      font-size: 0.80rem;
+      
+  }
+
+  #hero div {
+      flex: 0 75%;
+  }  
+  
+  #hero div img {
+      width: 20%;
+  }
+
+  section:not(#hero), footer {
+      flex-direction: column;
+  }
+
+  section:not(#hero) h2, footer h2 {
+      margin-bottom: 10px;
+  }
+
+   #about-me h2, #work h2, #contact-me h2 {
+      border-bottom: 1px solid var(--heading-responsive);
+  }
+  
+  #work #projects {
+      border-left: none;
+  }
+  
+  #work #projects > div {
+      margin: 10px 0 0 10px;
+  }
+
+  #resume #info {
+      border-left: none;
+  }
+  
+  #resume #info div:nth-child(2) div p, #resume #info div:last-child div p {
+     font-size: 0.8rem;
+  }
+
+  #contact-me {
+      background: var(--secondary-color);
+  }
+
+  #contact-me h2 {
+      align-self: center;
+  }
+  
+  #contact-me address {
+      border-left: none;
+  }
+
+  #contact-me address a {
+      color: var(--color-black);
+      border-bottom: none;
+      font-size: 1.1rem;
+  }
+} 
+
+@media screen and (max-width: 575px) {
+
+  header nav h1 {
+      font-size: 1.8rem;
+  }
+
+  header nav ul li a {
+      font-size: 0.8rem;
+      padding: 5px 5px; 
+  }
+
+  #hero div {
+      flex: 0 65%;
+      left: 10px;
+  }
+  
+  #hero div img {
+      width: 25%;
+  }
+
+
+  #about-me div p{
+      font-size: 0.9rem;
+  }
+  
+  #work #projects > div {
+      width: 45%;
+      height: auto;
+  }
+  
+  #work #projects > div:first-child {
+      height: 250px;
+  }
+  
+  #work #projects > div:first-child img {
+      width: 80%;
+  }
+
+  #resume #info {
+      flex-direction: column;
+  }
+  
+  #resume #info > div {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: solid 1px black;
+  
+  }
+
+  #resume #info div h3 {
+      border: 1px solid var(--heading-responsive);
+      border-radius: 25%;
+      align-self: center;
+      flex: 0 10%;
+      font-size: 1.2rem;
+  
+  }
+
+  #resume #info div > div {
+      flex: 0 70%;
+      
+   }
+
+   #resume #info div:nth-child(2) div p {
+       border: none;
+   }
 }
+
+/* Media Queries section ends here for mobile-responsiveness */
 
