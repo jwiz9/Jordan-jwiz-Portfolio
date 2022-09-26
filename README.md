@@ -12,4 +12,4 @@ Use this README to explore my motives, design ideas, and coding ability.
 ![screenshot](https://user-images.githubusercontent.com/112971337/190304793-a5315ad5-3ca9-4035-9a98-41d3ffcd4375.png)
 
 UPDATE:
-![screenshot-2](https://user-images.githubusercontent.com/112971337/192279470-1dfb0f49-241e-4950-b40d-db470693bbd5.png)
+![screenshot-2](https://user-images.githubusercontent.com/112971337/192280482-7030a176-7dd7-4e86-81ee-3aa8f7a2b6e4.png)
